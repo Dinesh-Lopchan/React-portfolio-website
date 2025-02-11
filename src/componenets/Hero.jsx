@@ -23,7 +23,7 @@ const Hero = () => {
         {/* Right Section - Profile Image */}
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-          <img src={Profile} alt="Dinesh Tamang" className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 object-cover"/>
+          <img src={Profile} alt="Dinesh Tamang" className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 object-cover rounded-2xl"/>
           </div>
         </div>
     </div>
