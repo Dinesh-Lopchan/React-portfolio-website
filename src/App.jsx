@@ -1,8 +1,9 @@
+import Hero from "./componenets/Hero"; //Importing Hero  component
 import Navbar from "./componenets/Navbar"; //Importing Navbar  component
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialised selection:bg-cyan-300 selection:text-cyan-900">
+    <div className="overflow-x-hidden text-neutral-300 antialised selection:bg-white selection:text-cyan-900">
       
       {/* Background and layering */}
       <div className="fixed top-0 -z-10 h-full w-full"></div>
@@ -13,6 +14,7 @@ const App = () => {
       {/* Main content container */}
       <div className="container mx-auto px-8">
         <Navbar/> {/* Navbar component included here */}
+        <Hero/> {/* Navbar component included here */}
       </div>  
     </div>
     
