@@ -4,6 +4,7 @@ import About from "./componenets/About"; //Importing About  component
 import Technologies from "./componenets/Technologies"; //Importing Technologies component
 import Experience from "./componenets/Experience";
 import Projects from "./componenets/Projects";
+import Contact from "./componenets/Contact";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Technologies/> {/* Technologies component included here */}
         <Experience/> {/* Experience component included here */}
         <Projects/> {/* Projects component included here */}
+        <Contact/> {/* Contact component included here */}
       </div>  
     </div>
     
