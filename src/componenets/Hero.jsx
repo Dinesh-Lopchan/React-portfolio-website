@@ -60,7 +60,7 @@ const Hero = () => {
               animate={{ x:0, opacity:1 }}
               transition={{duration:0.5, delay:1.5}}
               src={Profile} 
-              alt="Dinesh Tamang" className="w-full max-w-[80%] md:max-w-[350px] lg:max-w-[300px] h-auto object-contain rounded-2xl"/>
+              alt="Dinesh Tamang" className="w-full max-w-[80%] md:max-w-[350px] lg:max-w-[350px] h-auto object-contain rounded-2xl"/>
           </div>
         </div>
     </div>

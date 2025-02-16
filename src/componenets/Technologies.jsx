@@ -2,6 +2,21 @@ import { RiReactjsLine } from "react-icons/ri";  // Importing React icon
 import { DiPython, DiJava, DiHtml5, DiCss3Full, DiMysql } from "react-icons/di";  // Importing various tech icons
 import { FaGit, FaGithub } from "react-icons/fa";  // Importing Git and GitHub icons
 import { SiDjango, SiFirebase } from "react-icons/si";  // Importing Django and Firebase icons
+import {motion} from "framer-motion";
+
+
+const iconVariants = (duration) => ({
+    initial: {y: -10},
+    animate: {
+        y: [10, -10, 0],
+        transition: {
+            duration: duration,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
+        },
+    },
+});
 
 const Technologies = () => {
   return (
@@ -11,50 +26,94 @@ const Technologies = () => {
         <h1 className="my-20 text-center text-4xl">Tools & Technologies</h1>
 
         {/* Technology Icons Display */}
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div 
+            whileInView={{opacity:1, x:0}}
+            initial={{opacity:0, x:-100}}
+            transition={{duration:1.5}}
+            className="flex flex-wrap items-center justify-center gap-4">
 
             {/* Each technology represented by its respective icon */}
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <RiReactjsLine className="text-5xl" style={{ color: "#61DAFB" }} />
-            </div>
+            <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <RiReactjsLine className="text-4xl" style={{ color: "#61DAFB" }} />
+            </motion.div>
 
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiPython className="text-5xl" style={{ color: "#306998" }}/>
-            </div>
+            <motion.div 
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <DiPython className="text-4xl" style={{ color: "#306998" }}/>
+            </motion.div>
 
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiJava className="text-5xl" style={{ color: "#f89820" }}/>
-            </div>
+            <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <DiJava className="text-4xl" style={{ color: "#f89820" }}/>
+            </motion.div>
 
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiHtml5 className="text-5xl" style={{ color: "#E34F26" }} />
-            </div>
+            <motion.div 
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <DiHtml5 className="text-4xl" style={{ color: "#E34F26" }} />
+            </motion.div>
 
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiCss3Full className="text-5xl" style={{ color: "#1572B6" }}/>
-            </div>
+            <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <DiCss3Full className="text-4xl" style={{ color: "#1572B6" }}/>
+            </motion.div>
 
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiDjango className="text-5xl" style={{ color: "#092E20" }}/>
-            </div>
+            <motion.div 
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiDjango className="text-4xl" style={{ color: "#092E20" }}/>
+            </motion.div>
 
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiFirebase className="text-5xl" style={{ color: "#FFCA28" }} />
-            </div>
+            <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiFirebase className="text-4xl" style={{ color: "#FFCA28" }} />
+            </motion.div>
 
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaGit className="text-5xl" style={{ color: "#F05032" }} />
-            </div>
+            <motion.div 
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaGit className="text-4xl" style={{ color: "#F05032" }} />
+            </motion.div>
 
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaGithub className="text-5xl" style={{ color: "#FFFFFF" }}/>
-            </div>
+            <motion.div 
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaGithub className="text-4xl" style={{ color: "#FFFFFF" }}/>
+            </motion.div>
 
-            <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiMysql className="text-5xl" style={{ color: "#4479A1" }}/>
-            </div>
+            <motion.div 
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <DiMysql className="text-4xl" style={{ color: "#4479A1" }}/>
+            </motion.div>
 
-        </div>
+        </motion.div>
 
     </div>
   )

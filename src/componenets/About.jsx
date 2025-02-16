@@ -24,7 +24,7 @@ const About = () => {
                 <div className="flex items-center justify-center w-full">
 
                     {/* Responsive profile image */}
-                    <img className="w-full max-w-[80%] md:max-w-[350px] lg:max-w-[280px] h-auto object-contain rounded-2xl" src={aboutImg} alt="About" />
+                    <img className="w-full max-w-[80%] md:max-w-[350px] lg:max-w-[300px] h-auto object-contain rounded-2xl" src={aboutImg} alt="About" />
                 </div>
             </motion.div>
 
@@ -34,7 +34,7 @@ const About = () => {
                 initial={{opacity:0, x:100}}
                 transition={{duration:0.5}}
                 className="w-full lg:w-1/2">
-                <div className="flex flex-col justify-center lg:justify-start">
+                <div className="flex flex-col items-center lg:items-start">
 
                     {/* Splitting ABOUT_TEXT into multiple paragraphs */}
                     {ABOUT_TEXT.split("\n").map((paragraph, index) =>(
@@ -52,7 +52,7 @@ const About = () => {
       </div>
     </div>
   
-  };
+    };
 
 export default About
 
