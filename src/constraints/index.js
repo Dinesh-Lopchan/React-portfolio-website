@@ -3,7 +3,7 @@ import project2 from "../assets/Dinesh.jpg";
 import project3 from "../assets/Dinesh.jpg";
 import project4 from "../assets/Dinesh.jpg";
 
-export const HERO_CONTENT = `Hi! My name is Dinesh Tamang.`;
+export const HERO_CONTENT = `I am a dedicated Computer Science student at the University of West London with a passion for software development and problem-solving. My expertise lies in Python, Java, and web technologies, with hands-on experience in frameworks like Django and tools such as Firebase and GitHub. I have worked on diverse projects, including chatbot development, Story management system, and mobile applications, which have strengthened my skills in building efficient and user-friendly solutions.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile software developer with a passion for creating efficient and user-friendly applications`;
 

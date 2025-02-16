@@ -13,8 +13,8 @@ const About = () => {
 
             {/* Left Section - Profile Image */}
             <div className="w-full lg:w-1/2 lg:p-8">
-                <div className="flex items-center justofy-center">
-                    <img className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 object-cover rounded-2xl" src={aboutImg} alt="About" />
+                <div className="flex items-center justify-center lg:justify-start">
+                    <img className="w:-32 h:-32 sm:w-40 sm:h-40 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover rounded-2xl" src={aboutImg} alt="About" />
                 </div>
             </div>
 

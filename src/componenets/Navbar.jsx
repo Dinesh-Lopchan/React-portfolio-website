@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
 
         {/* Right Section - Social Media Icons */}
-        <div className="m-8 flex items-center justify-center gap-4 text-3xl">
+        <div className="m-8 flex items-center gap-4 text-3xl">
             <FaLinkedin/>
             <FaGithub/> 
         </div>
