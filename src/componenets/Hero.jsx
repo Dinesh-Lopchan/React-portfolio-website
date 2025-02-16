@@ -46,7 +46,7 @@ const Hero = () => {
                   variants={container(1)}
                   initial="hidden"
                   animate="visible"
-                  className="my-2 max-w-xl py-6 font-light tracking-tighter">
+                  className="my-2 max-w-xl py-6 font-light tracking-tighter text-justify">
                   {HERO_CONTENT}
                 </motion.p>
             </div>
@@ -54,13 +54,13 @@ const Hero = () => {
 
         {/* Right Section - Profile Image */}
         <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex items-center justify-center w-full lg:justify-end">
             <motion.img 
               initial={{ x:100, opacity:0}}
               animate={{ x:0, opacity:1 }}
               transition={{duration:0.5, delay:1.5}}
               src={Profile} 
-              alt="Dinesh Tamang" className="w:-32 h:-32 sm:w-40 sm:h-40 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover rounded-2xl"/>
+              alt="Dinesh Tamang" className="w-full max-w-[80%] md:max-w-[350px] lg:max-w-[300px] h-auto object-contain rounded-2xl"/>
           </div>
         </div>
     </div>

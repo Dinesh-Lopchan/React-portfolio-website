@@ -3,9 +3,13 @@ import project2 from "../assets/Dinesh.jpg";
 import project3 from "../assets/Dinesh.jpg";
 import project4 from "../assets/Dinesh.jpg";
 
-export const HERO_CONTENT = `I am a dedicated Computer Science student at the University of West London with a passion for software development and problem-solving. My expertise lies in Python, Java, and web technologies, with hands-on experience in frameworks like Django and tools such as Firebase and GitHub. I have worked on diverse projects, including chatbot development, Story management system, and mobile applications, which have strengthened my skills in building efficient and user-friendly solutions.`;
+export const HERO_CONTENT = `I am a Computer Science student at the University of West London with a passion for software development, machine learning, and web technologies. My expertise lies in programming languages like Python and Java, as well as web development frameworks such as Django. I have gained hands-on experience working with Firebase and GitHub while building real-world applications like chatbots, a Story Management System, and mobile apps. These projects have sharpened my ability to design efficient, scalable, and user-friendly solutions.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile software developer with a passion for creating efficient and user-friendly applications`;
+export const ABOUT_TEXT = `At the University of West London, I’ve taken on various leadership roles, including Course Representative and Peer Mentor, where I got the opportunity to improve the student experience and support my peers. As Communication Manager for the Nepalese Society, I helped lead our team to win Society of the Year, which helped refine my skills in teamwork, organization, and communication. My involvement with the ATAL Tech Society gave me valuable exposure to emerging technologies and the broader tech landscape.
+
+\n Alongside my academic and leadership experiences, I gained practical insights through company visits and industry workshops. A two-day workshop at Amazon provided a closer look at their technology processes, while visits to Sky and Brompton Technology allowed me to see how technology is applied in different sectors. Additionally, shadowing IT professionals at Travelodge offered me hands-on experience with IT infrastructure. These experiences have broadened my understanding of the tech industry and the application of technology in real-world settings.`;
+  
+export const ABOUT_LINK = `https://sucomms5.wixsite.com/uwlsu/post/building-confidence-community-dinesh-s-time-at-uwl`;
 
 export const EXPERIENCES = [
   {
