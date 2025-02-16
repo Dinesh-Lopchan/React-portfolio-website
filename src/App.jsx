@@ -3,6 +3,7 @@ import Navbar from "./componenets/Navbar"; //Importing Navbar  component
 import About from "./componenets/About"; //Importing About  component
 import Technologies from "./componenets/Technologies"; //Importing Technologies component
 import Experience from "./componenets/Experience";
+import Projects from "./componenets/Projects";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <About/> {/* About component included here */}
         <Technologies/> {/* Technologies component included here */}
         <Experience/> {/* Experience component included here */}
+        <Projects/> {/* Projects component included here */}
       </div>  
     </div>
     
