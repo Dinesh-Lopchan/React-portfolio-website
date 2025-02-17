@@ -2,9 +2,9 @@ import { RiReactjsLine } from "react-icons/ri";  // Importing React icon
 import { DiPython, DiJava, DiHtml5, DiCss3Full, DiMysql } from "react-icons/di";  // Importing various tech icons
 import { FaGit, FaGithub } from "react-icons/fa";  // Importing Git and GitHub icons
 import { SiDjango, SiFirebase } from "react-icons/si";  // Importing Django and Firebase icons
-import {motion} from "framer-motion";
+import {motion} from "framer-motion"; //Importing Framer Motion for animations
 
-
+// Animation variants for floating effect
 const iconVariants = (duration) => ({
     initial: {y: -10},
     animate: {
@@ -27,8 +27,8 @@ const Technologies = () => {
 
         {/* Technology Icons Display */}
         <motion.div 
-            whileInView={{opacity:1, x:0}}
-            initial={{opacity:0, x:-100}}
+            whileInView={{opacity:1, y:0}}
+            initial={{opacity:0, y:-100}}
             transition={{duration:1.5}}
             className="flex flex-wrap items-center justify-center gap-4">
 

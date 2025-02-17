@@ -46,7 +46,7 @@ const About = () => {
 
                 {/* External link to the blog */}
                 <div className="flex justify-center lg:justify-start">
-                    <a href={ABOUT_LINK} target="_blank" className="text-blue-500 underline py-3">My Journey - University of West London Student Union Blog</a>
+                    <a href={ABOUT_LINK} target="_blank" className="text-blue-500 underline py-3">My University Journey - University of West London Student Union Blog</a>
                 </div>
             </motion.div>
       </div>

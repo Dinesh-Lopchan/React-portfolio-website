@@ -13,33 +13,20 @@ export const ABOUT_LINK = `https://sucomms5.wixsite.com/uwlsu/post/building-conf
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "May 2023 - Present",
+    role: "F&B Supervisor",
+    company: "Travelodge Hotels Limited",
+    description: `Worked across multiple locations under different management teams, showcasing adaptability and leadership. Trained new employees on Opera, a hotel management software, while overseeing office administration and improving operational efficiency. Implemented health and safety protocols and leveraged customer feedback from TripAdvisor and Wish Surveys to enhance service quality. Recognized with the Brilliant Base Award for consistently demonstrating actions and behaviors that contributed to the company’s success.`,
+    technologies: ["Office Administration, Opera (Hotel Management Software), Customer Service, Training"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "September 2024 - November 2024",
+    role: "Programmatic SEO Specialist Intern",
+    company: "TikBox",
+    description: `Analyzed user data using Google Analytics, examining key metrics such as traffic sources and user behavior to identify trends and optimize the user experience. Utilized insights to improve conversion rates by enhancing the website's performance. Integrated Elementrix and Yoast with WordPress to optimize blog posts, ensuring they followed SEO best practices. Optimized content for better keyword targeting, readability, and meta descriptions, which resulted in improved search engine rankings.`,
+    technologies: ["Google Analytics, WordPress, Elementrix, Yoast, SEO, Data Analysis"],
   },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+  
 ];
 
 export const PROJECTS = [

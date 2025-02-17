@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa"; //Import GitHub Icon
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
+    <nav className="mb-20 flex items-center justify-between py-0">
 
         {/* Left Section - Logo */}
         <div className="flex flex-shrink-0 items-center">
@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
 
         {/* Right Section - Social Media Icons */}
-        <div className="m-8 flex items-center gap-4 text-3xl">
+        <div className="m-8 flex items-center gap-5 text-3xl">
             <FaLinkedin/>
             <FaGithub/> 
         </div>
