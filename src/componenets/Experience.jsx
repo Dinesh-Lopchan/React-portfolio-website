@@ -6,11 +6,11 @@ const Experience = () => {
     <div className="border-b border-neutral-900 pb-4">
 
         {/* Section Title */}
-        <h1 className="my-20 text-center text-4xl">Experience</h1>
+        <h1 className="my-20 text-center text-4xl">Experiences</h1>
 
         <div>
             {EXPERIENCES.map((experience, index) => (
-                <div key={index} className="mb-12 flex flex-wrap lg:justify-center">
+                <div key={index} className="mb-12 flex flex-wrap lg:justify-center md:justify-center">
 
                     {/* Left Section - Year */}
                     <motion.div
@@ -18,7 +18,7 @@ const Experience = () => {
                         initial={{ opacity:0, x:-100 }}
                         transition={{ duration: 0.5 }}
                         className="w-full lg:w-1/4">
-                        <p className="mb-2 text-sm text-neutral-400">
+                        <p className="mb-2 text-md text-neutral-400">
                             {experience.year} 
                         </p>
                     </motion.div>
