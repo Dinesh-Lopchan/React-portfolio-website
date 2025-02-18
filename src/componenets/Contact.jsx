@@ -6,10 +6,10 @@ const Contact = () => {
     <div className="border-b border-neutral-900 pb-20">
 
         {/* Section Title */}
-        <h1 className="my-10 text-center text-4xl">Contacts</h1>
+        <h1 className="my-10 text-center text-3xl text-neutral-700">GET IN TOUCH</h1>
 
         {/* Contact Details */}
-        <div className="text-center tracking-tighter">
+        <div className="text-center tracking-tighter text-gray-500">
 
             {/* Address Animation - Fades in from the left */}
             <motion.p 

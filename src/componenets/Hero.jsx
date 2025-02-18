@@ -14,7 +14,7 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
-  return <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+  return <div className="border-b border-neutral-900 pb-4 lg:mb-35 text-gray-500">
     <div className="flex flex-wrap">
 
         {/* Left Section - Text Content */}
@@ -27,7 +27,7 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   transition={{duration: 0.5, delay: 1}}
-                  className="pb-16 text-5xl font-thin tracking-tight lg:mt-16 lg:text-5xl">
+                  className="pb-10 text-5xl font-thin tracking-tight lg:mt-16 lg:text-5xl">
                     Dinesh Tamang
                 </motion.h1>
 

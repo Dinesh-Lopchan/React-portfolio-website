@@ -5,12 +5,12 @@ import { ABOUT_LINK } from "../constraints"; // Importing external blog link
 import {motion} from "framer-motion"; // Importing Framer Motion for animations
 
 const About = () => {
-    return <div className="border-b border-neutral-900 pb-4">
+    return <div className="border-b border-neutral-900 pb-4 text-gray-500">
 
       {/* Section Title */}  
-      <h1 className="my-20 text-center text-4xl">
-          About
-          <span className="text-neutral-500"> Me</span>
+      <h1 className="my-20 text-center text-3xl">
+          ABOUT
+          <span className="text-neutral-700"> ME</span>
       </h1>
 
       <div className="flex flex-wrap">

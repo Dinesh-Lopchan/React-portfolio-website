@@ -2,7 +2,7 @@ import { link } from "framer-motion/client";
 import project1 from "../assets/chatbot.png";
 import project2 from "../assets/website.png";
 import project3 from "../assets/mobile.png";
-import project4 from "../assets/story.jpg";
+import project4 from "../assets/story.png";
 import project5 from "../assets/Server.jpg"
 
 export const HERO_CONTENT = `I am a Computer Science student at the University of West London with a passion for software development, machine learning, and web technologies. My expertise lies in programming languages like Python and Java, as well as web development frameworks such as Django. I have gained hands-on experience working with Firebase and GitHub while building real-world applications like chatbots, a Story Management System, and mobile apps. These projects have sharpened my ability to design efficient, scalable, and user-friendly solutions.`;
@@ -62,7 +62,7 @@ export const PROJECTS = [
     technologies: ["Java","OOP","JUnit"],
   },
   {
-    title: "ITMagazine Workflow Server",
+    title: "IT-Magazine Workflow Server",
     image: project5,
     description:
       "A distributed system application for managing IT magazine stories. It enables synchronous communication via RMI for local and remote interactions and asynchronous communication using RabbitMQ for message queuing between departments like editing, processing, and accounts.",
