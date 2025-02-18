@@ -1,5 +1,5 @@
 import { PROJECTS } from "../constraints" // Importing project data from constraints
-import  {motion} from "framer-motion";
+import  {motion} from "framer-motion"; //Importing motion for animations
 
 
 const Projects = () => {
@@ -10,7 +10,7 @@ const Projects = () => {
         <h1 className="my-20 text-center text-4xl">Projects</h1>
         <div>
             {PROJECTS.map((project, index) => (
-                <div key={index} className="mb-10 flex flex-wrap lg:justify-center md:justify-center">
+                <div key={index} className="mb-10 flex flex-wrap lg:justify-center md:justify-center gap-10">
 
                     {/* Left Section - Project Image */}
                     <motion.div 
