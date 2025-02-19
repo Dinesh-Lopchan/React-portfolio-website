@@ -1,39 +1,40 @@
 import { CONTACT } from "../constraints" // Importing contact details from constraints
-import {motion} from "framer-motion"; //Importing motion for animations
+import { MapPin, Phone, Mail } from "lucide-react"; // Importing black & white icons
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-20">
+    <div className="border-b pb-20">
 
-        {/* Section Title */}
-        <h1 className="my-10 text-center text-3xl text-neutral-700">GET IN TOUCH</h1>
+      {/* Section Title */}
+      <h1 className="my-10 text-center text-3xl text-gray-500">CONTACT ME</h1>
 
-        {/* Contact Details */}
-        <div className="text-center tracking-tighter text-gray-500">
+      {/* Contact Details */}
+      <div className="text-center tracking-tighter text-gray-500">
 
-            {/* Address Animation - Fades in from the left */}
-            <motion.p 
-              whileInView={{opacity:1, x:0}}
-              initial={{opacity:0, x:-100}}
-              transition={{duration:0.5}}
-              className="my-4">
-                {CONTACT.address}
-            </motion.p>
+        {/* Address  */}
+        <p className="flex justify-center gap-0.5">
+          <MapPin className="text-gray-500" size={20} />
+          <span className="font-semibold text-gray-500">:</span>
+          <p className="text-center">{CONTACT.address}</p>
+        </p>
 
-            {/* Phone Number Animation - Fades in from the right */}
-            <motion.p 
-              whileInView={{opacity:1, x:0}}
-              initial={{opacity:0, x:100}}
-              transition={{duration:0.5}}
-              className="my-4">
-                {CONTACT.phoneNo}
-            </motion.p>
+        {/* Phone Number */}
+        <p className="flex justify-center gap-0.5">
+          <Phone className="text-gray-500" size={20} />
+          <span className="font-semibold text-gray-500">:</span>
+          <p className="text-center">{CONTACT.phoneNo}</p>
+        </p>
 
-            {/* Email Link - Clickable email address */}
-            <a href={`mailto:${CONTACT.email}`} className="border-b">
-                {CONTACT.email}
-            </a>          
-        </div> 
+        {/* Email Link - Clickable email address */}
+        <div className="flex justify-center gap-0.5">
+          <Mail className="text-gray-500" size={20} />
+          <span className="font-semibold text-gray-500">:</span>
+          <a href={`mailto:${CONTACT.email}`} className="border-b">
+            {CONTACT.email}
+          </a>
+        </div>
+
+      </div>
     </div>
   )
 }

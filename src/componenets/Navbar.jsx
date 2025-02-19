@@ -25,7 +25,7 @@ const Navbar = () => {
         <a
           href="https://github.com/Dinesh-Lopchan?tab=overview&from=2025-02-01&to=2025-02-18"
           target="_blank" rel="noopener noreferrer"
-          className="hover:text-gray-400">
+          className="hover:text-gray-300">
           <FaGithub />
         </a>
       </div>

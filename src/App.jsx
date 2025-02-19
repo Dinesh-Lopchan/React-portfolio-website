@@ -23,9 +23,9 @@ const App = () => {
         <Navbar/> {/* Navbar component included here */}
         <Hero/> {/* Hero component included here */}
         <About/> {/* About component included here */}
-        <Technologies/> {/* Technologies component included here */}
-        <Experience/> {/* Experience component included here */}
-        <Projects/> {/* Projects component included here */}
+        {/*<Technologies/> {/* Technologies component included here */}
+        {/*<Experience/> {/* Experience component included here */}
+        {/*<Projects/> {/* Projects component included here */}
         <Contact/> {/* Contact component included here */}
       </div>  
     </div>
