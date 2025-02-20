@@ -1,3 +1,4 @@
+
 import { PROJECTS } from "../constraints" // Importing project data from constraints
 import { motion } from "framer-motion"; //Importing motion for animations
 import { useState } from "react"; // Import useState hook for state management
@@ -17,7 +18,7 @@ const Projects = () => {
         <div className="border-b border-neutral-900 pb-4 ">
 
             {/* Section Title */}
-            <h1 className="my-20 text-center text-4xl text-neutral-700">PROJECTS</h1>
+            <h1 className="my-20 text-center text-3xl">PROJECTS</h1>
             <div>
                 {PROJECTS.map((project, index) => (
                     <div key={index} className="mb-10 flex flex-wrap lg:justify-center md:justify-center gap-10 ">
@@ -33,7 +34,7 @@ const Projects = () => {
                                 width={230}
                                 height={200}
                                 alt={project.title}
-                                className="mb-6 rounded-lg border-4 border-gray-400 hover:border-gray-200 transition-all duration-300"
+                                className="mb-6 rounded-lg"
                                 onClick={() => handleImageClick(project.image)} // Trigger the modal when clicked
                             />
                         </motion.div>
@@ -46,7 +47,7 @@ const Projects = () => {
                             className="w-full max-w-xl lg:w-3/4 ">
 
                             {/* Project Title */}
-                            <h6 className="mb-2 font-semibold text-gray-500">{project.title}</h6>
+                            <h6 className="mb-2 font-semibold ">{project.title}</h6>
 
                             {/* Conditionally Render Link at the Bottom for Nepalese Society Website */}
                             {project.title === "UWL Nepalese Society Website" && (
@@ -58,7 +59,7 @@ const Projects = () => {
                             )}
 
                             {/* Technologies Used */}
-                            <p className="mb-4 text-gray-500 text-justify">{project.description}</p>
+                            <p className="mb-4 text-justify">{project.description}</p>
                             {project.technologies.map((tech, index) => (
                                 <span key={index} className="mr-2 rounded bg-neutral-200 px-2 py-1 text-sm font-medium text-blue-500">
                                     {tech}
@@ -70,24 +71,6 @@ const Projects = () => {
                 ))}
             </div>
 
-            {/* Modal for Enlarged Image */}
-            {selectedImage && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-                    <div className="relative">
-                        <img
-                            src={selectedImage}
-                            alt="Enlarged project"
-                            className="max-w-3xl max-h-screen object-contain rounded-2xl"
-                        />
-                        <button
-                            onClick={handleCloseModal}
-                            className="absolute top-2 right-2 text-white text-l bg-black p-2 rounded-full"
-                        >
-                            &times;
-                        </button>
-                    </div>
-                </div>
-            )}
         </div>
     )
 }

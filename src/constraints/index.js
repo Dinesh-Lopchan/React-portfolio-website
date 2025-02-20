@@ -19,14 +19,14 @@ export const EXPERIENCES = [
     role: "F&B Supervisor",
     company: "Travelodge Hotels Limited",
     description: `Worked across multiple locations under different management teams, showcasing adaptability and leadership. Trained new employees on Opera, a hotel management software, while overseeing office administration and improving operational efficiency. Implemented health and safety protocols and leveraged customer feedback from TripAdvisor and Wish Surveys to enhance service quality. Recognized with the Brilliant Base Award for consistently demonstrating actions and behaviors that contributed to the company’s success.`,
-    technologies: ["Office Administration", "Staff Training", "Customer Service","Opera (HM Software)"],
+    technologies: ["Customer Service","Interpersonal Skills"],
   },
   {
     year: "September 2024 - November 2024",
     role: "Programmatic SEO Specialist Intern",
     company: "TikBox",
     description: `Analyzed user data using Google Analytics, examining key metrics such as traffic sources and user behavior to identify trends and optimize the user experience. Utilized insights to improve conversion rates by enhancing the website's performance. Integrated Elementrix and Yoast with WordPress to optimize blog posts, ensuring they followed SEO best practices. Optimized content for better keyword targeting, readability, and meta descriptions, which resulted in improved search engine rankings.`,
-    technologies: ["Google Analytics", "WordPress", "Elementrix", "Yoast", "SEO", "Data Analysis"],
+    technologies: ["WordPress", "SEO", "Data Analytics"],
   },
   
 ];
@@ -37,14 +37,14 @@ export const PROJECTS = [
     image: project1,
     description:
       "A web app that predicts the likelihood of heart disease using an SVM machine learning model, integrated with an interactive chatbot powered by the Hugging Face Transformers API for user queries. The app also provides a user-friendly interface for seamless interaction with the prediction system.",
-    technologies: ["Python", "Machine Learning", "API", "Django", "JavaScript", "HTML", "CSS"],
+    technologies: ["Django", "JavaScript", "HTML", "CSS","ML"],
   },
   {
     title: "UWL Nepalese Society Website",
     image: project2,
     description:
       "A community-based website built for the Nepalese society to connect, share content, and interact. The website features different pages where I contributed in Board Members page for easy access to leadership information, and a Blog page for sharing community news and events as well as researched and provided content for the website, ensuring it was informative and engaging.",
-    technologies: ["Python", "Django", "Git", "GitHub", "VSCode"],
+    technologies: ["Python", "Django", "Git", "GitHub"],
     link: "https://uwlnepalesesociety.com/"
   },
   {
@@ -66,7 +66,7 @@ export const PROJECTS = [
     image: project5,
     description:
       "A distributed system application for managing IT magazine stories. It enables synchronous communication via RMI for local and remote interactions and asynchronous communication using RabbitMQ for message queuing between departments like editing, processing, and accounts.",
-    technologies: ["Java","RMI","RabbitMQ","Distributed Systems"],
+    technologies: ["Java","RMI","RabbitMQ",],
   },
 ];
 

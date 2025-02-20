@@ -6,6 +6,7 @@ import Experience from "./componenets/Experience";
 import Projects from "./componenets/Projects";
 import Contact from "./componenets/Contact";
 
+
 const App = () => {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialised selection:bg-white selection:text-cyan-900 bg-slate-900">
@@ -23,9 +24,9 @@ const App = () => {
         <Navbar/> {/* Navbar component included here */}
         <Hero/> {/* Hero component included here */}
         <About/> {/* About component included here */}
-        {/*<Technologies/> {/* Technologies component included here */}
-        {/*<Experience/> {/* Experience component included here */}
-        {/*<Projects/> {/* Projects component included here */}
+        <Technologies/> {/* Technologies component included here */}
+        <Experience/> {/* Experience component included here */}
+        <Projects/> {/* Projects component included here */}
         <Contact/> {/* Contact component included here */}
       </div>  
     </div>

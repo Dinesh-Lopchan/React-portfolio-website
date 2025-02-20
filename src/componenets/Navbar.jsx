@@ -7,12 +7,12 @@ const Navbar = () => {
     <nav className=" flex items-center justify-between py-6">
 
       {/* Left Section - Welcome Text with Waving Hand */}
-      <div className=" text-gray-500 flex items-center text-2xl">
+      <div className=" flex items-center text-2xl">
         Welcome to My Site 👋
       </div>
 
       {/* Right Section - Social Media Icons */}
-      <div className="m-8 flex items-center gap-5 text-4xl text-gray-500">
+      <div className="m-8 flex items-center gap-4 text-4xl ">
         {/* LinkedIn Icon */}
         <a
           href="https://www.linkedin.com/in/dinesh-tamang-153678268/"
@@ -25,7 +25,7 @@ const Navbar = () => {
         <a
           href="https://github.com/Dinesh-Lopchan?tab=overview&from=2025-02-01&to=2025-02-18"
           target="_blank" rel="noopener noreferrer"
-          className="hover:text-gray-300">
+          className="hover:text-gray-600">
           <FaGithub />
         </a>
       </div>

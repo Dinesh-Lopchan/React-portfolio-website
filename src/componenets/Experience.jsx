@@ -3,10 +3,10 @@ import {motion} from "framer-motion"; // Importing motion component for animatio
 
 const Experience = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 text-gray-600">
+    <div className="border-b border-neutral-900 pb-4 ">
 
         {/* Section Title */}
-        <h1 className="my-20 text-center text-3xl text-neutral-700">EXPERIENCES</h1>
+        <h1 className="my-20 text-center text-3xl ">EXPERIENCES</h1>
 
         <div>
             {EXPERIENCES.map((experience, index) => (
@@ -18,7 +18,7 @@ const Experience = () => {
                         initial={{ opacity:0, x:-100 }}
                         transition={{ duration: 0.5 }}
                         className="w-full lg:w-1/4">
-                        <p className="mb-3  text-gray-600">
+                        <p className="mb-3  ">
                             {experience.year} 
                         </p>
                     </motion.div>
@@ -33,13 +33,13 @@ const Experience = () => {
                         {/* Job Role and Company */}
                         <h6 className="mb-2 font-semibold">
                             {experience.role} -{" "}
-                            <span className="text-md text-gray-500">
+                            <span className="text-md ">
                                 {experience.company}
                             </span>
                         </h6>
 
                         {/* Job Description */}
-                        <p className="mb-3 text-gray-500 text-justify">
+                        <p className="mb-3 text-justify">
                             {experience.description}
                         </p>
 
