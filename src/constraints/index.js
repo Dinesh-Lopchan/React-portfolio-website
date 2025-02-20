@@ -1,7 +1,9 @@
-import project1 from "../assets/Dinesh.jpg";
-import project2 from "../assets/Dinesh.jpg";
-import project3 from "../assets/Dinesh.jpg";
-import project4 from "../assets/Dinesh.jpg";
+import { link } from "framer-motion/client";
+import project1 from "../assets/chatbot.png";
+import project2 from "../assets/website.png";
+import project3 from "../assets/mobile.png";
+import project4 from "../assets/story.png";
+import project5 from "../assets/Server.jpg"
 
 export const HERO_CONTENT = `I am a Computer Science student at the University of West London with a passion for software development, machine learning, and web technologies. My expertise lies in programming languages like Python and Java, as well as web development frameworks such as Django. I have gained hands-on experience working with Firebase and GitHub while building real-world applications like chatbots, a Story Management System, and mobile apps. These projects have sharpened my ability to design efficient, scalable, and user-friendly solutions.`;
 
@@ -13,68 +15,63 @@ export const ABOUT_LINK = `https://sucomms5.wixsite.com/uwlsu/post/building-conf
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "May 2023 - Present",
+    role: "F&B Supervisor",
+    company: "Travelodge Hotels Limited",
+    description: `Worked across multiple locations under different management teams, showcasing adaptability and leadership. Trained new employees on Opera, a hotel management software, while overseeing office administration and improving operational efficiency. Implemented health and safety protocols and leveraged customer feedback from TripAdvisor and Wish Surveys to enhance service quality. Recognized with the Brilliant Base Award for consistently demonstrating actions and behaviors that contributed to the company’s success.`,
+    technologies: ["Customer Service","Interpersonal Skills"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "September 2024 - November 2024",
+    role: "Programmatic SEO Specialist Intern",
+    company: "TikBox",
+    description: `Analyzed user data using Google Analytics, examining key metrics such as traffic sources and user behavior to identify trends and optimize the user experience. Utilized insights to improve conversion rates by enhancing the website's performance. Integrated Elementrix and Yoast with WordPress to optimize blog posts, ensuring they followed SEO best practices. Optimized content for better keyword targeting, readability, and meta descriptions, which resulted in improved search engine rankings.`,
+    technologies: ["WordPress", "SEO", "Data Analytics"],
   },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+  
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Heart Disease Prediction Chatbot",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A web app that predicts the likelihood of heart disease using an SVM machine learning model, integrated with an interactive chatbot powered by the Hugging Face Transformers API for user queries. The app also provides a user-friendly interface for seamless interaction with the prediction system.",
+    technologies: ["Django", "JavaScript", "HTML", "CSS","ML"],
   },
   {
-    title: "Task Management App",
+    title: "UWL Nepalese Society Website",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "A community-based website built for the Nepalese society to connect, share content, and interact. The website features different pages where I contributed in Board Members page for easy access to leadership information, and a Blog page for sharing community news and events as well as researched and provided content for the website, ensuring it was informative and engaging.",
+    technologies: ["Python", "Django", "Git", "GitHub"],
+    link: "https://uwlnepalesesociety.com/"
   },
   {
-    title: "Portfolio Website",
+    title: "E-commerce Mobile Web App",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "This mobile web app provides an intuitive shopping experience with an interactive product catalog and seamless navigation. Users can easily browse through products, add items to their cart, and manage their selections effortlessly. The app ensures secure user authentication, leveraging Firebase to protect user data and accounts.",
+    technologies: ["Java", "Android Studio", "XML", "Firebase"],
   },
   {
-    title: "Blogging Platform",
+    title: "Story Management System",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A Java-based story management system for journalists to register, update, and manage stories, with editor functionalities for review and approval. The system supports saving and publishing stories with modular design and unit testing for validation.",
+    technologies: ["Java","OOP","JUnit"],
+  },
+  {
+    title: "IT-Magazine Workflow Server",
+    image: project5,
+    description:
+      "A distributed system application for managing IT magazine stories. It enables synchronous communication via RMI for local and remote interactions and asynchronous communication using RabbitMQ for message queuing between departments like editing, processing, and accounts.",
+    technologies: ["Java","RMI","RabbitMQ",],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "London, United Kingdom ",
+  phoneNo: "+44 7795 243240 ",
+  email: "dipak.lama1979@gmail.com",
 };
