@@ -1,6 +1,6 @@
 import { FaLinkedin } from "react-icons/fa"; // Import LinkedIn icon
 import { FaGithub } from "react-icons/fa"; // Import GitHub Icon
-import { motion } from "framer-motion"; //Import framer motion
+
 
 const Navbar = () => {
   return (
