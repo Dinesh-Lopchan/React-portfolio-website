@@ -3,14 +3,14 @@ import {motion} from "framer-motion"; // Importing motion component for animatio
 
 const Experience = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 ">
+    <div className="border-b border-neutral-200 ">
 
         {/* Section Title */}
-        <h1 className="my-20 text-center text-3xl ">EXPERIENCES</h1>
+        <h1 className="my-14 text-center text-3xl ">EXPERIENCES</h1>
 
         <div>
             {EXPERIENCES.map((experience, index) => (
-                <div key={index} className="mb-12 flex flex-wrap lg:justify-center md:justify-center ">
+                <div key={index} className="mb-12 flex flex-wrap justify-center ">
 
                     {/* Left Section - Year */}
                     <motion.div

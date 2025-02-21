@@ -15,13 +15,13 @@ const Projects = () => {
         setSelectedImage(null); // Close the modal by resetting the selected image
     };
     return (
-        <div className="border-b border-neutral-900 pb-4 ">
+        <div className="border-b border-neutral-200 ">
 
             {/* Section Title */}
-            <h1 className="my-20 text-center text-3xl">PROJECTS</h1>
+            <h1 className="my-14 text-center text-3xl">PROJECTS</h1>
             <div>
                 {PROJECTS.map((project, index) => (
-                    <div key={index} className="mb-10 flex flex-wrap lg:justify-center md:justify-center gap-10 ">
+                    <div key={index} className="mb-14 flex flex-wrap justify-center gap-7 ">
 
                         {/* Left Section - Project Image */}
                         <motion.div
@@ -34,7 +34,7 @@ const Projects = () => {
                                 width={230}
                                 height={200}
                                 alt={project.title}
-                                className="mb-6 rounded-lg"
+                                className=" rounded-lg"
                                 onClick={() => handleImageClick(project.image)} // Trigger the modal when clicked
                             />
                         </motion.div>
@@ -47,11 +47,11 @@ const Projects = () => {
                             className="w-full max-w-xl lg:w-3/4 ">
 
                             {/* Project Title */}
-                            <h6 className="mb-2 font-semibold ">{project.title}</h6>
+                            <h6 className="mb-2 font-semibold text-center sm:text-center md:text-start lg:text-start">{project.title}</h6>
 
                             {/* Conditionally Render Link at the Bottom for Nepalese Society Website */}
                             {project.title === "UWL Nepalese Society Website" && (
-                                <div className="mt-4">
+                                <div className="mt-2 text-center md:text-start lg:text-start">
                                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
                                         Visit Society Website
                                     </a>
@@ -59,11 +59,12 @@ const Projects = () => {
                             )}
 
                             {/* Technologies Used */}
-                            <p className="mb-4 text-justify">{project.description}</p>
+                            <p className="mb-4 text-justify ">{project.description}</p>
                             {project.technologies.map((tech, index) => (
-                                <span key={index} className="mr-2 rounded bg-neutral-200 px-2 py-1 text-sm font-medium text-blue-500">
+                                <span key={index} className="mr-2 rounded bg-neutral-200 px-2 py-1 text-sm font-medium text-blue-500 ">
                                     {tech}
                                 </span>
+
                             ))}
 
                         </motion.div>

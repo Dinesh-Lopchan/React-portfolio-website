@@ -20,7 +20,7 @@ const App = () => {
       </div>
 
       {/* Main content container */}
-      <div className="container mx-auto px-8">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Navbar/> {/* Navbar component included here */}
         <Hero/> {/* Hero component included here */}
         <About/> {/* About component included here */}

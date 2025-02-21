@@ -1,10 +1,10 @@
 import { FaLinkedin } from "react-icons/fa"; // Import LinkedIn icon
 import { FaGithub } from "react-icons/fa"; // Import GitHub Icon
-import { motion } from "framer-motion"; //Import framer motion
+
 
 const Navbar = () => {
   return (
-    <nav className=" flex items-center justify-between py-6">
+    <nav className=" flex items-center justify-between py-2">
 
       {/* Left Section - Welcome Text with Waving Hand */}
       <div className=" flex items-center text-2xl">

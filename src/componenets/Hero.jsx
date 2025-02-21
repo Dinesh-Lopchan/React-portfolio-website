@@ -14,8 +14,8 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
-  return <div className="border-b border-neutral-900 pb-4 lg:mb-35 ">
-    <div className="flex flex-wrap">
+  return <div className="border-b border-neutral-200 pb-12 lg:mb-35">
+    <div className="flex flex-wrap items-center justify-between">
 
         {/* Left Section - Text Content */}
         <div className="w-full lg:w-1/2">
@@ -27,7 +27,7 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   transition={{duration: 0.5, delay: 1}}
-                  className="pb-10 text-5xl font-thin tracking-tight lg:mt-16 lg:text-5xl">
+                  className="pb-5 text-5xl font-thin tracking-tight lg:mt-16 lg:text-5xl">
                     Dinesh Tamang
                 </motion.h1>
 
@@ -46,7 +46,7 @@ const Hero = () => {
                   variants={container(1)}
                   initial="hidden"
                   animate="visible"
-                  className="my-2 max-w-xl py-6 font-light tracking-tighter text-justify">
+                  className="my-2 max-w-xl py-4 font-light tracking-tighter text-justify">
                   {HERO_CONTENT}
                 </motion.p>
             </div>
@@ -60,7 +60,7 @@ const Hero = () => {
               animate={{ x:0, opacity:1 }}
               transition={{duration:0.5, delay:1.5}}
               src={Profile} 
-              alt="Dinesh Tamang" className="w-full max-w-[80%] md:max-w-[350px] lg:max-w-[350px] h-auto object-contain rounded-2xl"/>
+              alt="Dinesh Tamang" className="w-auto max-w-[300px] md:max-w-[320px] lg:max-w-[350px] h-auto object-contain rounded-2xl"/>
           </div>
         </div>
     </div>

@@ -3,10 +3,10 @@ import { MapPin, Phone, Mail } from "lucide-react"; // Importing black & white i
 
 const Contact = () => {
   return (
-    <div className="border-b pb-20">
+    <div className="border-b border-slate-900 pb-20">
 
       {/* Section Title */}
-      <h1 className="my-10 text-center text-3xl ">CONTACT ME</h1>
+      <h1 className="my-12 text-center text-3xl ">CONTACT ME</h1>
 
       {/* Contact Details */}
       <div className="text-center tracking-tighter ">
