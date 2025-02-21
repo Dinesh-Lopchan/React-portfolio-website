@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa"; // Import GitHub Icon
 
 const Navbar = () => {
   return (
-    <nav className=" flex items-center justify-between py-2">
+    <nav className=" flex items-center justify-between py-5">
 
       {/* Left Section - Welcome Text with Waving Hand */}
       <div className=" flex items-center text-2xl">
