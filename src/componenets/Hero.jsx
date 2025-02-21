@@ -14,7 +14,7 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
-  return <div className="border-b border-neutral-200 pb-12 lg:mb-35 overflow-hidden">
+  return <div className="border-b border-neutral-200 pb-12 lg:mb-35 overflow-hidden min-h-full">
     <div className="flex flex-wrap items-center justify-between">
 
         {/* Left Section - Text Content */}
