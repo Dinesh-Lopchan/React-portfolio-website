@@ -27,7 +27,7 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   transition={{duration: 0.5, delay: 1}}
-                  className="pb-5 text-5xl font-thin tracking-tight lg:mt-16 lg:text-5xl">
+                  className="pb-7 text-5xl font-thin tracking-tight lg:mt-16 lg:text-5xl">
                     Dinesh Tamang
                 </motion.h1>
 
