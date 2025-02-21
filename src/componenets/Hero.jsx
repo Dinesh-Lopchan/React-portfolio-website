@@ -19,7 +19,7 @@ const Hero = () => {
 
         {/* Left Section - Text Content */}
         <div className="w-full lg:w-1/2">
-            <div className="flex flex-col items-center lg:items-start">
+            <div className="flex flex-col items-start lg:items-start">
 
                 {/* Animated Name */}
                 <motion.h1 
