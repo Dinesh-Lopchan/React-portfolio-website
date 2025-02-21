@@ -5,15 +5,15 @@ import { ABOUT_LINK } from "../constraints"; // Importing external blog link
 import {motion} from "framer-motion"; // Importing Framer Motion for animations
 
 const About = () => {
-    return <div className="border-b border-neutral-900 pb-4 ">
+    return <div className="border-b border-neutral-200 pb-8 ">
 
       {/* Section Title */}  
-      <h1 className="my-20 text-center text-3xl">
+      <h1 className="my-11 text-center text-3xl">
           ABOUT
           <span className="text-neutral-500"> ME</span>
       </h1>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap items-center">
 
             {/* Left Section - Animated Profile Image */}
             <motion.div 
@@ -24,7 +24,7 @@ const About = () => {
                 <div className="flex items-center justify-center w-full">
 
                     {/* Responsive profile image */}
-                    <img className="w-full max-w-[80%] md:max-w-[350px] lg:max-w-[300px] h-auto object-contain rounded-2xl" src={aboutImg} alt="About" />
+                    <img className="w-full max-w-[300px] md:max-w-[320px] lg:max-w-[350px] h-auto object-contain rounded-2xl" src={aboutImg} alt="About" />
                 </div>
             </motion.div>
 
@@ -55,4 +55,3 @@ const About = () => {
     };
 
 export default About
-

@@ -35,8 +35,8 @@ const Technologies = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center p-10 bg-gray-900 text-white">
-      <h1 className="text-3xl mb-6">TOOLS & TECHNOLOGIES</h1>
+    <div className="flex flex-col items-center justify-center p-10 bg-gray-900 text-white border-b border-neutral-200 pb-14">
+      <h1 className="text-3xl mb-12">TOOLS & TECHNOLOGIES</h1>
 
       {/* Big Container Box */}
       <div className="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-500 w-full max-w-4xl">
