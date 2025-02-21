@@ -5,21 +5,21 @@ import {motion} from "framer-motion"; // Importing motion for animation effects
 
 // Animation container settings with delay for smooth transitions
 const container = (delay) => ({
-  hidden: {x: -100, opacity:0},
+  hidden: { opacity: 0, scale: 0.8 },
   visible: {
-    x: 0,
     opacity: 1,
-    transition: {duration:0.5, delay: delay},
+    scale: 1,
+    transition: { duration: 0.5, delay: delay },
   },
 });
 
 const Hero = () => {
-  return <div className="border-b border-neutral-200 pb-12 lg:mb-35">
+  return <div className="border-b border-neutral-200 pb-12 lg:mb-35 min-h-screen overflow-hidden">
     <div className="flex flex-wrap items-center justify-between">
 
         {/* Left Section - Text Content */}
         <div className="w-full lg:w-1/2">
-            <div className="flex flex-col items-start lg:items-start">
+            <div className="flex flex-col items-start sm:items-center lg:items-start">
 
                 {/* Animated Name */}
                 <motion.h1 
@@ -56,9 +56,9 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex items-center justify-center w-full lg:justify-end">
             <motion.img 
-              initial={{ x:100, opacity:0}}
-              animate={{ x:0, opacity:1 }}
-              transition={{duration:0.5, delay:1.5}}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 1.5 }}
               src={Profile} 
               alt="Dinesh Tamang" className="w-auto max-w-[300px] md:max-w-[320px] lg:max-w-[350px] h-auto object-contain rounded-2xl"/>
           </div>
