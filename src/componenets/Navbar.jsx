@@ -12,7 +12,7 @@ const Navbar = () => {
       </div>
 
       {/* Right Section - Social Media Icons */}
-      <div className="m-8 flex items-center gap-4 text-4xl ">
+      <div className="m-8 flex items-center gap-4 text-3xl ">
         {/* LinkedIn Icon */}
         <a
           href="https://www.linkedin.com/in/dinesh-tamang-153678268/"
