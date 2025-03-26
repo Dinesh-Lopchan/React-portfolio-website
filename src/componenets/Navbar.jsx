@@ -31,7 +31,7 @@ const Navbar = () => {
 
         {/* CV Icon with Tooltip */}
         <a
-          href="/DINESH TAMANG.pdf" 
+          href="/DINESH.pdf" 
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-red-600"
