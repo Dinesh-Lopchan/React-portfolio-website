@@ -18,9 +18,21 @@ const Contact = () => {
 
   // Initialize EmailJS when component mounts
   useEffect(() => {
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+
+    if (!publicKey || !serviceId || !templateId) {
+      console.error('Missing EmailJS environment variables');
+      setSubmitStatus({
+        success: false,
+        message: 'Email service configuration is incomplete. Please check your environment variables.'
+      });
+      return;
+    }
+
     try {
-      // Initialize EmailJS with your public key
-      emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+      emailjs.init(publicKey);
       setIsEmailJSReady(true);
       console.log('EmailJS initialized successfully');
     } catch (error) {

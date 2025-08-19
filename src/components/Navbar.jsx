@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaLinkedin, FaGithub, FaFileAlt, FaBars, FaTimes } from "react-icons/fa";
 
@@ -43,6 +43,28 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const menuRef = useRef(null);
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target) && 
+          !document.querySelector('.mobile-menu-button')?.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   // Close mobile menu when a link is clicked
   const closeMobileMenu = () => {
@@ -206,7 +228,7 @@ const Navbar = () => {
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-2 rounded-md text-gray-300 hover:bg-slate-800"
+                className="mobile-menu-button p-2 rounded-md text-gray-300 hover:bg-slate-800"
                 aria-label="Toggle menu"
               >
                 {isMenuOpen ? <FaTimes className="text-xl" /> : <FaBars className="text-xl" />}
@@ -220,11 +242,12 @@ const Navbar = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
+            ref={menuRef}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="fixed top-16 left-0 w-full bg-slate-900 shadow-lg z-40 md:hidden"
+            transition={{ duration: 0.2 }}
+            className="fixed top-16 left-0 w-full bg-slate-900/95 backdrop-blur-sm shadow-lg z-40 md:hidden border-t border-slate-800"
           >
             <div className="container mx-auto px-6 py-4">
               <div className="flex flex-col space-y-4">
