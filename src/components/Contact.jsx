@@ -122,40 +122,40 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-20 bg-gradient-to-b from-slate-900 to-slate-800 overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-5">
-        <div className="absolute top-1/4 -right-32 w-96 h-96 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
-        <div className="absolute bottom-1/4 -left-32 w-96 h-96 bg-sky-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000"></div>
+    <section id="contact" className="relative py-12 sm:py-20 bg-gradient-to-b from-slate-900 to-slate-800 overflow-hidden">
+      {/* Decorative elements - reduced on mobile */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-5 sm:opacity-10">
+        <div className="hidden sm:block absolute top-1/4 -right-32 w-96 h-96 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
+        <div className="hidden sm:block absolute bottom-1/4 -left-32 w-96 h-96 bg-sky-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 sm:mb-4">
             Get In <span className="text-emerald-400">Touch</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto">
             Have a project in mind or want to discuss potential opportunities? Let's talk!
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-emerald-400 to-teal-500 mx-auto mt-4 rounded-full"></div>
+          <div className="w-16 sm:w-20 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-500 mx-auto mt-3 sm:mt-4 rounded-full"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Contact Form */}
           <motion.div 
             variants={container}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10"
+            className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-5 sm:p-8 border border-slate-700/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10"
           >
-            <h3 className="text-2xl font-semibold text-white mb-6">Send me a message</h3>
+            <h3 className="text-2xl sm:text-2xl font-semibold text-white mb-6">Send me a message</h3>
             
             <form ref={form} onSubmit={handleSubmit} className="space-y-6">
               <motion.div variants={item}>
@@ -245,14 +245,14 @@ const Contact = () => {
           </motion.div>
           
           {/* Right Column - Graduation Photo and Work Together Card */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {/* Graduation Photo Card */}
             <motion.div 
               variants={item}
               className="relative"
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-emerald-800 to-teal-1000 rounded-3xl opacity-70 blur-xl"></div>
-              <div className="aspect-[4/3] w-full overflow-hidden relative z-10 rounded-2xl border-4 border-white/10 shadow-2xl">
+              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-emerald-800 to-teal-1000 rounded-2xl sm:rounded-3xl opacity-70 blur-xl"></div>
+              <div className="aspect-[4/3] w-full overflow-hidden relative z-10 rounded-xl sm:rounded-2xl border-4 border-white/10 shadow-xl sm:shadow-2xl">
                 <img 
                   src={GraduationPhoto} 
                   alt="Dinesh Tamang - Graduation" 
@@ -260,6 +260,7 @@ const Contact = () => {
                   style={{
                     objectPosition: 'center 20%',
                   }}
+                  loading="lazy"
                 />
               </div>
             </motion.div>

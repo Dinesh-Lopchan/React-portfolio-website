@@ -66,73 +66,56 @@ const Technologies = () => {
   };
 
   return (
-    <section id="technologies" className="relative py-20 bg-gradient-to-b from-slate-900 to-slate-800 overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-5">
-        <div className="absolute top-1/4 -right-20 w-96 h-96 bg-sky-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-        <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-emerald-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-      </div>
-
-      <div className="container mx-auto px-6 relative z-10">
-        {/* Section Header */}
+    <section id="technologies" className="relative py-12 sm:py-16 bg-gradient-to-b from-slate-900 to-slate-800">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-12"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
             My <span className="text-emerald-400">Tech Stack</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4 max-w-2xl mx-auto">
             Technologies I've worked with and my proficiency level in each area
           </p>
-          <div className="w-20 h-1 bg-gradient-to-r from-emerald-400 to-teal-500 mx-auto mt-4 rounded-full"></div>
+          <div className="w-16 sm:w-20 h-0.5 sm:h-1 bg-gradient-to-r from-emerald-400 to-teal-500 mx-auto rounded-full"></div>
         </motion.div>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {techCategories.map((category, catIndex) => (
             <motion.div
               key={catIndex}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: catIndex * 0.1 }}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10"
+              className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-slate-700/50 hover:border-emerald-500/30 transition-all duration-300"
             >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-400">
+              <div className="flex items-center gap-3 mb-4 sm:mb-6">
+                <div className="p-1.5 sm:p-2 bg-emerald-500/10 rounded-lg text-emerald-400">
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-white">{category.title}</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-white">{category.title}</h3>
               </div>
               
-              <motion.div 
-                variants={container}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="grid grid-cols-2 gap-4"
-              >
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skillIndex}
-                    variants={item}
-                    onMouseEnter={() => setHoveredSkill(skill.name)}
-                    onMouseLeave={() => setHoveredSkill(null)}
-                    className={`relative p-4 rounded-lg bg-slate-800/30 border ${
-                      hoveredSkill === skill.name 
-                        ? 'border-emerald-500/50 shadow-lg shadow-emerald-500/10' 
-                        : 'border-slate-700/50'
-                    } transition-all duration-300`}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: skillIndex * 0.05 }}
+                    className="p-3 sm:p-4 rounded-lg bg-slate-800/30 border border-slate-700/50 hover:border-emerald-500/30 transition-colors"
                   >
                     <div className="flex flex-col items-center text-center">
-                      <div className="mb-2 transition-transform duration-300 hover:scale-110">
+                      <div className="mb-1.5 sm:mb-2">
                         {skill.icon}
                       </div>
-                      <span className="text-sm font-medium text-gray-300">{skill.name}</span>
-                      <div className="w-full bg-slate-700/50 rounded-full h-1.5 mt-3 overflow-hidden">
+                      <span className="text-xs sm:text-sm font-medium text-gray-300">{skill.name}</span>
+                      <div className="w-full bg-slate-700/50 rounded-full h-1.5 mt-2 sm:mt-3 overflow-hidden">
                         <div 
                           className="bg-gradient-to-r from-emerald-400 to-teal-500 h-full rounded-full"
                           style={{ width: `${skill.level}%` }}
@@ -142,33 +125,37 @@ const Technologies = () => {
                     </div>
                   </motion.div>
                 ))}
-              </motion.div>
+              </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Additional Skills */}
+        {/* Also Experienced With Section */}
         <motion.div 
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 bg-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50 hover:border-amber-500/30 transition-all duration-300"
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-8 sm:mt-12 bg-slate-800/30 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-slate-700/50 hover:border-amber-500/30 transition-colors"
         >
-          <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-            <span className="p-2 bg-amber-500/10 rounded-lg text-amber-400">
-              <FaMobileAlt className="text-xl" />
+          <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6 flex items-center gap-2">
+            <span className="p-1.5 sm:p-2 bg-amber-500/10 rounded-lg text-amber-400">
+              <FaMobileAlt className="text-lg sm:text-xl" />
             </span>
             Also Experienced With
           </h3>
-          <div className="flex flex-wrap gap-3 justify-center">
-            {['REST APIs', 'Testing', 'Agile/Scrum Methodologies', 'Problem Solving', 'Team Collaboration', 'Effective Communication'].map((item, index) => (
-              <span 
+          <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
+            {['REST APIs', 'Testing', 'Agile/Scrum', 'Problem Solving', 'Teamwork', 'Communication'].map((item, index) => (
+              <motion.span 
                 key={index}
-                className="px-4 py-2 bg-slate-700/30 text-gray-300 rounded-full text-sm border border-slate-600/50 hover:bg-slate-700/70 hover:border-amber-500/30 transition-colors"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                className="px-3 py-1.5 text-xs sm:text-sm bg-slate-700/30 text-gray-300 rounded-full border border-slate-600/50 hover:bg-slate-700/50 hover:border-amber-500/30 transition-colors"
               >
                 {item}
-              </span>
+              </motion.span>
             ))}
           </div>
         </motion.div>

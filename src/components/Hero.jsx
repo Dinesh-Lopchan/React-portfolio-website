@@ -15,28 +15,28 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden min-h-[700px] bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-emerald-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
-        <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-sky-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-1/4 left-1/2 w-64 h-64 bg-amber-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
+    <div className="relative overflow-hidden min-h-[500px] sm:min-h-[700px] bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900">
+      {/* Reduced animation intensity for mobile */}
+      <div className="absolute inset-0 overflow-hidden opacity-10 sm:opacity-20">
+        <div className="hidden sm:block absolute top-1/4 left-1/4 w-64 h-64 bg-emerald-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
+        <div className="hidden sm:block absolute top-1/3 right-1/4 w-72 h-72 bg-sky-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div className="hidden sm:block absolute bottom-1/4 left-1/2 w-64 h-64 bg-amber-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="container mx-auto px-6 py-24 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-24 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Left Section - Text Content */}
           <motion.div 
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="w-full lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0"
+            transition={{ duration: 0.6 }}
+            className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0"
           >
             <motion.p 
               variants={container(0.2)}
               initial="hidden"
               animate="visible"
-              className="text-emerald-400 font-mono text-lg mb-4"
+              className="text-emerald-400 font-mono text-base sm:text-lg mb-3 sm:mb-4"
             >
               Hello, I'm
             </motion.p>
@@ -45,7 +45,7 @@ const Hero = () => {
               variants={container(0.4)}
               initial="hidden"
               animate="visible"
-              className="text-5xl md:text-6xl font-bold text-white mb-6"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 sm:mb-6"
             >
               Dinesh Tamang
             </motion.h1>
@@ -71,7 +71,7 @@ const Hero = () => {
               variants={container(0.8)}
               initial="hidden"
               animate="visible"
-              className="text-xl md:text-2xl font-medium text-white mb-8 max-w-2xl leading-relaxed bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent"
+              className="text-xl sm:text-2xl font-medium text-white mb-8 max-w-2xl leading-relaxed bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent"
             >
               {HERO_CONTENT}
             </motion.p>
@@ -80,17 +80,17 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-row gap-4 justify-center lg:justify-start"
             >
               <a 
                 href="#projects" 
-                className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full font-medium hover:opacity-90 transition-all transform hover:scale-105"
+                className="px-6 py-2.5 sm:px-8 sm:py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full font-medium hover:opacity-90 transition-all transform hover:scale-105 text-sm sm:text-base flex-1 sm:flex-none text-center"
               >
                 View My Work
               </a>
               <a 
                 href="#contact" 
-                className="px-8 py-3 border-2 border-emerald-500 text-emerald-400 rounded-full font-medium hover:bg-emerald-500/10 transition-all"
+                className="px-6 py-2.5 sm:px-8 sm:py-3 border-2 border-emerald-500 text-emerald-400 rounded-full font-medium hover:bg-emerald-500/10 transition-all text-sm sm:text-base flex-1 sm:flex-none text-center"
               >
                 Let's Connect
               </a>

@@ -73,21 +73,21 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-slate-900 to-slate-800 overflow-hidden">
-      <div className="container mx-auto px-4">
+    <section id="projects" className="py-12 sm:py-20 bg-gradient-to-b from-slate-900 to-slate-800 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.h2 
-          className="text-4xl font-bold text-center mb-12 text-white"
-          initial={{ opacity: 0, y: 20 }}
+          className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-white"
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
           My <span className="text-emerald-400">Projects</span>
-          <div className="w-20 h-1 bg-gradient-to-r from-emerald-400 to-teal-500 mx-auto mt-3 rounded-full"></div>
+          <div className="w-16 sm:w-20 h-0.5 sm:h-1 bg-gradient-to-r from-emerald-400 to-teal-500 mx-auto mt-2 sm:mt-3 rounded-full"></div>
         </motion.h2>
         
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
           {["All", "Django/Python", "React/JavaScript", "Java"].map((btn) => {
             const btnFilter = btn.toLowerCase().split('/')[0];
             const isActive = filter === btnFilter.toLowerCase();
@@ -96,7 +96,7 @@ const Projects = () => {
               <motion.button
                 key={btn}
                 onClick={() => setFilter(btnFilter.toLowerCase())}
-                className={`px-6 py-2 rounded-full font-medium text-sm transition-colors ${
+                className={`px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-colors ${
                   isActive 
                     ? 'bg-emerald-500 text-white' 
                     : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
@@ -114,7 +114,7 @@ const Projects = () => {
         <AnimatePresence mode="wait">
           <motion.div 
             key={filter}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
             variants={container}
             initial="hidden"
             animate="visible"
@@ -185,20 +185,23 @@ const Projects = () => {
 
         {/* CTA */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-center mt-16"
+          className="text-center mt-12 sm:mt-16"
         >
-          <p className="text-gray-400 text-sm mb-4">
+          <p className="text-gray-400 text-sm sm:text-base mb-3 sm:mb-4">
             Interested in seeing more of my work or discussing a project?
           </p>
           <a 
             href="#contact" 
-            className="inline-flex items-center px-5 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full text-sm font-medium hover:opacity-90 transition-all transform hover:scale-105"
+            className="inline-flex items-center px-4 sm:px-7 py-1.5 sm:py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full text-xs sm:text-base font-medium hover:opacity-90 transition-all transform hover:scale-105"
           >
-            Let's Chat
+            Let's Talk About Project
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </a>
         </motion.div>
       </div>
