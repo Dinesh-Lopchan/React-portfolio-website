@@ -1,10 +1,11 @@
-import Hero from "./componenets/Hero"; //Importing Hero  component
-import Navbar from "./componenets/Navbar"; //Importing Navbar  component
-import About from "./componenets/About"; //Importing About  component
-import Technologies from "./componenets/Technologies"; //Importing Technologies component
-import Experience from "./componenets/Experience";
-import Projects from "./componenets/Projects";
-import Contact from "./componenets/Contact";
+import Hero from "./components/Hero"; //Importing Hero  component
+import Navbar from "./components/Navbar"; //Importing Navbar  component
+import About from "./components/About"; //Importing About  component
+import Technologies from "./components/Technologies"; //Importing Technologies component
+import Experience from "./components/Experience";
+import Certifications from "./components/Certifications"; // Importing the new Certifications component
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <About/> {/* About component included here */}
         <Technologies/> {/* Technologies component included here */}
         <Experience/> {/* Experience component included here */}
+        <Certifications/> {/* New Certifications component */}
         <Projects/> {/* Projects component included here */}
         <Contact/> {/* Contact component included here */}
       </div>  
