@@ -1,77 +1,120 @@
-import { link } from "framer-motion/client";
-import project1 from "../assets/chatbot.png";
-import project2 from "../assets/website.png";
-import project3 from "../assets/mobile.png";
-import project4 from "../assets/story.png";
-import project5 from "../assets/Server.jpg"
+export const HERO_CONTENT = `First Class Computer Science Graduate | Tech Enthusiast | Sports Person`;
 
-export const HERO_CONTENT = `I am a Computer Science student at the University of West London passionate about software development, machine learning, and web technologies. My expertise lies in programming languages like Python and Java, as well as web development frameworks such as Django. I have gained hands-on experience working with Firebase and GitHub while building real-world applications like chatbots, a Story Management System, and mobile apps. These projects have honed my ability to design efficient, scalable, and user-friendly solutions.`;
+export const ABOUT_DETAILS = `Recent Computer Science graduate from the University of West London with a growing passion for software development and Quality Assurance. My technical background provides a strong foundation for understanding the software development lifecycle and the critical role of QA in delivering high-quality products.`;
 
-export const ABOUT_TEXT = `At the University of West London, I’ve taken on various leadership roles, including Course Representative and Peer Mentor, which allowed me to enhance the student experience and support my peers. As Communication Manager for the Nepalese Society, I helped lead our team to win Society of the Year, which helped refine my skills in teamwork, organization, and communication. My involvement with the ATAL Tech Society provided valuable exposure to emerging technologies and the broader tech landscape.
-
-\n Alongside my academic and leadership experiences, I gained practical insights through company visits and industry workshops. A two-day workshop at Amazon provided a closer look at their technology processes, while visits to Sky and Brompton Technology allowed me to see how technology is applied in different sectors. Additionally, shadowing IT professionals at Travelodge offered me hands-on experience with IT infrastructure. These experiences deepened my understanding of the tech industry and it's real world application.`;
+export const ABOUT_TEXT = `As a proactive student leader, I've served as Course Representative and Peer Mentor, while my role as Communication Manager for the Nepalese Society led to winning Society of the Year. Through industry workshops at Amazon, and company visits at Sky, and Brompton Technology, I've gained valuable insights into technology processes and quality standards.`;
   
 export const ABOUT_LINK = `https://sucomms5.wixsite.com/uwlsu/post/building-confidence-community-dinesh-s-time-at-uwl`;
 
 export const EXPERIENCES = [
   {
-    year: "May 2023 - Present",
-    role: "F&B Supervisor",
+    year: "Aug 2024 - Present",
+    role: "Supervisor",
     company: "Travelodge Hotels Limited",
-    description: `Worked across multiple locations under different management teams, showcasing adaptability and leadership. Trained new employees on Opera, a hotel management software, while overseeing office administration and improving operational efficiency. Implemented health and safety protocols and leveraged customer feedback from TripAdvisor and Wish Surveys to enhance service quality. Recognized with the Brilliant Base Award for consistently demonstrating behaviors that contributed to the company’s success.`,
-    technologies: ["Customer Service","Interpersonal Skills"],
+    achievements: [
+      "Boosted customer satisfaction by 25% through strategic team coordination and operational improvements.",
+      "Launched performance-based team competitions that increased sales and team motivation."
+    ],
+    awards: [
+      "Awarded 'Being the Brilliant Base' for achieving targets",
+      "'F&B Champion' for top sales performance",
+    ]
   },
   {
-    year: "September 2024 - November 2024",
+    year: "Sep 2024 - Nov 2024",
     role: "Programmatic SEO Specialist Intern",
     company: "TikBox",
-    description: `Analyzed user data using Google Analytics, examining key metrics such as traffic sources and user behavior to identify trends and optimize the user experience. Utilized insights to improve conversion rates by enhancing the website's performance. Integrated Elementrix and Yoast with WordPress to optimize blog posts, ensuring they followed SEO best practices. Optimized content for better keyword targeting, readability, and meta descriptions, leading to improved search engine rankings.`,
-    technologies: ["WordPress", "SEO", "Data Analytics"],
+    achievements: [
+      "Increased conversion rates by 15% through data analysis with Google Analytics.",
+      "Improved website visibility by 15% via WordPress SEO optimizations."
+    ]
   },
-  
+  {
+    year: "Mar 2024 - Jun 2024",
+    role: "Course Representative",
+    company: "University of West London",
+    achievements: [
+      "Advocated for student concerns in faculty meetings.",
+      "Facilitated communication between students and department heads."
+    ]
+  },
+  {
+    year: "Jul 2023 - Jun 2024",
+    role: "Public Relations & Communication Manager",
+    company: "UWL Nepalese Society",
+    achievements: [
+      "Organized 7+ events with 100+ attendees.",
+      "Developed society website and led mental health initiatives."
+    ],
+    awards: [
+      "'Society of the Year' award winner"
+    ]
+  },
+  {
+    year: "Nov 2023 - May 2024",
+    role: "Peer Mentor",
+    company: "University of West London",
+    achievements: [
+      "Supported first-year students with academic guidance.",
+      "Connected students with university resources and support services."
+    ]
+  },
+  {
+    year: "May 2023 - Aug 2024",
+    role: "Receptionist (with F&B responsibilities)",
+    company: "Travelodge Hotels Limited",
+    achievements: [
+      "Managed front desk and bar operations using NRS and Opera systems.",
+      "Coordinated group bookings, guest services, and handled administrative tasks."
+    ],
+    awards: [
+      "'Being the Brilliant Base' award for guest service",
+      "ASPIRE 1 leadership program graduate",
+    ]
+  }
 ];
 
 export const PROJECTS = [
   {
     title: "Heart Disease Prediction Chatbot",
-    image: project1,
-    description:
-      "A web app that predicts the likelihood of heart disease using an SVM machine learning model, integrated with an interactive chatbot powered by the Hugging Face Transformers API for real time user queries. The app also provides a user-friendly interface for seamless interaction with the prediction system.",
-    technologies: ["Django", "JavaScript", "HTML", "CSS","ML"],
+    description: "ML-powered chatbot using SVM and Hugging Face API for heart disease risk assessment.",
+    technologies: ["Django", "Python", "HTML", "CSS", "ML"],
+    github: "https://github.com/Dinesh-Lopchan/Heart-disease-prediction-Chatbot"
   },
   {
     title: "UWL Nepalese Society Website",
-    image: project2,
-    description:
-      "A community-based website built for the Nepalese society to connect, share content, and interact. The website features different pages where I contributed in Board Members page for easy access to leadership information, and a Blog page for sharing community news and events as well as researched and provided content for the website, ensuring it was informative and engaging.",
+    description: "Platform for the Nepalese society, where I initiated the idea and developed the Board Members page within a team .",
     technologies: ["Python", "Django", "Git", "GitHub"],
-    link: "https://uwlnepalesesociety.com/"
+    link: "https://uwlnepalesesociety.com/",
+    github: "https://github.com/Dinesh-Lopchan/UWL-Nepalese-Society-Website"
   },
   {
     title: "E-commerce Mobile Web App",
-    image: project3,
-    description:
-      "This mobile web app provides an intuitive shopping experience with an interactive product catalog and seamless navigation. Users can easily browse through products, add items to their cart, and manage their selections effortlessly. The app ensures secure user authentication, leveraging Firebase to protect user data and accounts.",
+    description: "Mobile-first shopping platform with Firebase authentication and real-time cart management.",
     technologies: ["Java", "Android Studio", "XML", "Firebase"],
+    github: "https://github.com/Dinesh-Lopchan/Ecommerce_mobile_app"
   },
   {
     title: "Story Management System",
-    image: project4,
-    description:
-      "A Java-based story management system for journalists to register, update, and manage stories, with editor functionalities for review and approval. The system supports saving and publishing stories with modular design and unit testing for validation.",
-    technologies: ["Java","OOP","JUnit"],
+    description: "Editorial workflow system for journalists with role-based access and publishing controls.",
+    technologies: ["Java", "OOP", "JUnit"],
+    github: "https://github.com/Dinesh-Lopchan/Story-management-system"
   },
   {
     title: "IT-Magazine Workflow Server",
-    image: project5,
-    description:
-      "A distributed system application for managing IT magazine stories. It enables synchronous communication via RMI for local and remote interactions and asynchronous communication using RabbitMQ for message queuing between departments like editing, processing, and accounts.",
-    technologies: ["Java","RMI","RabbitMQ",],
+    description: "Distributed system for magazine content management using RMI and RabbitMQ.",
+    technologies: ["Java", "RMI", "RabbitMQ"],
+    github: "https://github.com/Dinesh-Lopchan/ITMagazine-Workflow-Server"
+  },
+  {
+    title: "Portfolio Website",
+    description: "Comprehensive developer portfolio featuring projects, experience, and contact sections with responsive design.",
+    technologies: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
+    link: "https://dinesh-portfolio-website-zeta.vercel.app/",
+    github: "https://github.com/Dinesh-Lopchan/React-portfolio-website"
   },
 ];
 
 export const CONTACT = {
-  address: "London, United Kingdom ",
-  phoneNo: "+44 7795 243240 ",
   email: "dinesh.tamang0507@gmail.com",
 };
