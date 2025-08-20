@@ -30,7 +30,7 @@ const Certifications = () => {
     {
       title: "Python Essential Training",
       issuer: "LinkedIn Learning",
-      date: "2025",
+      date: "2024",
       skills: ["Python (Programming Language)"],
       link: "https://www.linkedin.com/in/dinesh-tamang-153678268/details/certifications/1704316252427/single-media-viewer/?profileId=ACoAAEGYNc8Bu1-koj259rK8yZXLhES3ULB4mwU",
       icon: <FaLinkedin className="text-3xl text-blue-600" />
